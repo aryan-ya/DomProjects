@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouseover</title>
+    <style>
+        body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 20rem;
+  background-color: red;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 500px;
+  font-size: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p class="click me">click me</p>
+    </div>
+
+    <script>
+        const boxElement = document.getElementById("box");
+
+        boxElement.addEventListener("mouseover" , function(){
+            alert("this is mouseover");
+        })
+
+    </script>
+</body>
+</html>
